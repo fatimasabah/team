@@ -1,0 +1,91 @@
+// cursive (pattaya) font
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+// robotto font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'variables';
+@import 'navbar';
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    margin-top: 60px;
+    font-size: 1.4rem;
+    height: 70vh;
+    position: relative;
+    
+    .header-block{
+        background: $blue;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-img{
+        width: 94%;
+        height: 94%;
+        object-fit: cover;
+        object-position: top;
+        filter: brightness(95%);
+    }
+
+    .header-text{
+        background: #ddd;
+        width: 100%;
+        padding: 20px;
+        transform: translateY(20px);
+        h3{
+            font-family: 'Pattaya', sans-serif;
+            font-size: 3.2rem;
+        }
+    }
+
+    .header-btn{
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        padding: 10px 22px;
+        background: $blue;
+        color: white;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+}
+@media(min-width: 786px){
+.header{
+    height: 80vh;
+    margin-top: 80px;
+    background: #ddd;
+    .header-block{
+        background: $blue;
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .header-img{
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 40%;
+        height: 94%;
+        object-fit: cover;
+        object-position: top;
+        filter: brightness(95%);
+    }
+
+    .header-text{
+        max-width: 500px;
+        background-color: none;
+        text-align: left;
+        margin-left: 55%;
+        transform: translateY(40vh);
+    }
+
+   
+}
+}
